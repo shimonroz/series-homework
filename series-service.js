@@ -38,3 +38,4 @@ export const addEpisode = (series, showId, seasonNumber, episode) =>
          series.map(item => item.id === showId ?
                 {...item, seasons: item.seasons.map(s => s.number == seasonNumber ? {...s, episodes: [...s.episodes, episode]} : s)} : item);
 
+
